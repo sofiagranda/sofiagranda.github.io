@@ -538,7 +538,7 @@ footer {
     }
 
     .equipos-container {
-        flex-direction: column; /* Apila los elementos en lugar de alinearlos en filas */
+         /* Apila los elementos en lugar de alinearlos en filas */
         gap: 10px;
     }
 
