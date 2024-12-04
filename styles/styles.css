@@ -543,7 +543,7 @@ footer {
     }
 
     .equipo-card {
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: 25%; /* Ocupa todo el ancho disponible */
     }
 
     .contenido {
