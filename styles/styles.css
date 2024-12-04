@@ -67,7 +67,6 @@ h2, h3 {
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .equipo-card {
     width: 150px;
     padding: 10px;
@@ -77,30 +76,25 @@ h2, h3 {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
-
 .equipo-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
-
 .equipo-card h3 {
     font-size: 23px;
     font-weight: bold;
     color: #ddd;
 }
-
 .equipo-card:hover {
     transform: scale(1.05);
     background: linear-gradient(10deg, #194b4f, #33fffc);
     border: 3px solid #333;
     transition: 0.2s;
 }
-
 .hidden {
     display: none;
 }
-
 #tabla-estadisticas {
     width: 100%;
     border-collapse: collapse;
@@ -125,11 +119,11 @@ h2, h3 {
 #tabla-estadisticas-equipo tr, #tabla-estadisticas th{
     text-transform: uppercase;
 }
-#estadisticas {
+#estadisticas2 {
     padding: 15px 26px;
 }
 
-#estadisticas h2 {
+#estadisticas1 h2 {
     text-align: center;
     color: #003366;
     margin-bottom: 20px;
@@ -488,7 +482,7 @@ section {
     content: "";
     margin: -4px auto 0;
 }
-#estadisticas h2{
+#estadisticas1 h2{
     font-size: 3em;
     color: #000;
     letter-spacing: 1px;
@@ -497,12 +491,12 @@ section {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#estadisticas h2 span{
+#estadisticas1 h2 span{
     color: #292929;
     font-weight: 200;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#estadisticas h2:after {
+#estadisticas1 h2:after {
     border-top: 2px solid #000;
     display: block;
     width: 100px;
@@ -524,26 +518,57 @@ footer {
     }
 
     nav {
-        width: 100%; /* Haz que el menú ocupe todo el ancho */
+        width: 30%; /* Haz que el menú ocupe todo el ancho */
         height: auto;
         flex-direction: column;
     }
 
     nav a {
         padding: 10px 0; /* Ajusta el padding para que los enlaces sean más pequeños */
+    }  
+    nav span{
+        width: 171px;
+        height: 25%;
     }
-
+    nav a:nth-child(1):hover~span{
+        top: 0px;
+        left: 0px;
+        width: 171px;
+        height: 25%;
+    }
+    nav a:nth-child(2):hover~span{
+        top: 40px;
+        left: 0px;
+        width: 171px;
+        height: 25%;
+    }
+    nav a:nth-child(3):hover~span{
+        top: 80px;
+        left: 0px;
+        width: 171px;
+        height: 25%;
+    }
+    nav a:nth-child(4):hover~span{
+        top: 120px;
+        left: 0px;
+        width: 171px;
+        height: 25%;
+    }
     #equipos h2 {
         font-size: 2em; /* Reduce el tamaño del texto */
     }
-
+    #equipos h2:after{
+        margin: 1px auto 0;
+    }
     .equipos-container {
-         /* Apila los elementos en lugar de alinearlos en filas */
         gap: 10px;
     }
 
     .equipo-card {
-        width: 25%; /* Ocupa todo el ancho disponible */
+        width: 27%; /* Ocupa todo el ancho disponible */
+    }
+    .equipo-card h3{
+        font-size: 23px;
     }
 
     .contenido {
@@ -551,11 +576,26 @@ footer {
         width: 100%; /* Ocupa todo el ancho */
         gap: 15px;
     }
-
+    #estadisticas1{
+        padding: 0px;
+        transform: scale(0.97);
+    }
+    #estadisticas1 h2{
+        padding: 0px 35px;
+    }
+    #estadisticas1 h2:after {
+        margin: 1px auto 0;
+    }
     .tabla-clasificacion,
     .goleadores,
     .resultados {
         width: 100%; /* Asegúrate de que ocupen todo el ancho */
+    }
+    #tablaCompleta{
+        width: 100%;
+    }
+    #tablaCompleta-Goleadores {
+        padding: 0px;
     }
 
     h2, h3 {
