@@ -1,7 +1,16 @@
+// Contenido adicional 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    });
+});
 // Datos de ejemplo de jugadores y estadísticas
 const jugadoresPorEquipo = {
     "Club Emilea": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 5, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -109,11 +118,11 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "The Walls": [
-        { jugador: "Nicolas Paredes", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
-        { jugador: "David Paredes", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Ricardo Paredes", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Nicolas Paredes", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
+        { jugador: "David Paredes", partidos_jugados: 0, goles: 9, amarillas: 0, rojas: 0 },
+        { jugador: "Ricardo Paredes", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
         { jugador: "Alexis Briones", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Cristopher Olmedo", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Cristopher Olmedo", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
         { jugador: "Cristhian Oviedo", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Diego Antamba", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Diego Yanza", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -121,9 +130,9 @@ const jugadoresPorEquipo = {
         { jugador: "Lenin Mateo", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Mateo Apellido", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Paul Vaca", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Antony Cazagiglia", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Antony Cazagiglia", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
         { jugador: "Alan Salazar", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Alejandro Guachamin", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Alejandro Guachamin", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
         { jugador: "Lucas Quiroz", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Monkeys": [
@@ -217,7 +226,7 @@ function renderEquipos() {
 
 // Mostrar estadísticas de jugadores
 function mostrarEstadisticas(equipoNombre) {
-    const container = document.getElementById("estadisticas");
+    const container = document.getElementById("estadisticas1");
     const tabla = document.getElementById("tabla-estadisticas").getElementsByTagName('tbody')[0];
     
     // Limpiar tabla
@@ -345,7 +354,7 @@ function mostrarEstadisticas_equipo(equipoNombre) {
 }
 // cerrar la ventana de estadisticas
 document.getElementById("cerrar-estadisticas").addEventListener("click", function() {
-    document.getElementById("estadisticas").style.display = "none";
+    document.getElementById("estadisticas1").style.display = "none";
 });
 
 // Inicialización
