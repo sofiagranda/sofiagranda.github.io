@@ -1,12 +1,16 @@
 /* General Styles */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 15vh;
     background: #333;
+    padding: 0 3em;
+}
+header h1 {
+    color: white;
+    font-size: 1em;
     text-transform: uppercase;
-    padding: 0em 3em;
 }
 nav {
     position: relative;
@@ -53,11 +57,13 @@ nav a:nth-child(4):hover~span{
     left: 432px;
     width: 168px;
 }
-header h1{
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    background: none;
+    border: none;
     color: white;
-    text-align: left;
-    font-size: 1em;
-    padding: 0.5em 0 0.5em 0;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 h2, h3 {
     text-align: center;
@@ -65,10 +71,12 @@ h2, h3 {
 .equipos-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0px 27px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajuste para más pequeñas las cartas */
+
 }
 .equipo-card {
-    width: 150px;
+    width: 65px;
     padding: 10px;
     text-align: center;
     border: 2px solid #ddd;
@@ -82,12 +90,13 @@ h2, h3 {
     border-radius: 8px;
 }
 .equipo-card h3 {
-    font-size: 23px;
+    font-size: 12px;
     font-weight: bold;
     color: #ddd;
+    margin: 0px;
 }
 .equipo-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background: linear-gradient(10deg, #194b4f, #33fffc);
     border: 3px solid #333;
     transition: 0.2s;
@@ -95,9 +104,35 @@ h2, h3 {
 .hidden {
     display: none;
 }
+#estadisticas1 table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+#estadisticas1 table th,
+#estadisticas1 table td {
+    padding: 0.8em; /* Aumenta el espacio para mejor legibilidad */
+    font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    text-align: center;
+    border: 1px solid #ccc; /* Añade borde a las celdas */
+}
+#estadisticas1 h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
 #tabla-estadisticas {
     width: 100%;
     border-collapse: collapse;
+}
+#estadisticas1 table th {
+    background-color: #333; /* Fondo oscuro para los encabezados */
+    color: white;
+}
+#estadisticas1 table td {
+    background-color: #f9f9f9; 
+    color: #000/* Fondo más claro para las celdas de datos */
 }
 
 #tabla-estadisticas th, #tabla-estadisticas td {
@@ -121,12 +156,6 @@ h2, h3 {
 }
 #estadisticas2 {
     padding: 15px 26px;
-}
-
-#estadisticas1 h2 {
-    text-align: center;
-    color: #003366;
-    margin-bottom: 20px;
 }
 
 .hidden {
@@ -512,80 +541,100 @@ footer {
 }
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Cambia a columna para que los elementos se apilen */
-        padding: 1em;
+    header {padding: 0 1.5em; position: relative;}
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8em;
+        cursor: pointer;
     }
-
     nav {
-        width: 30%; /* Haz que el menú ocupe todo el ancho */
-        height: auto;
+        display: none; /* Ocultar menú en móviles por defecto */
         flex-direction: column;
+        position: absolute;
+        top: 65%;
+        left: 261px;
+        width: 33%;
+        height: 192%;
+        background: #333;
+        z-index: 1000;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
-
-    nav a {
-        padding: 10px 0; /* Ajusta el padding para que los enlaces sean más pequeños */
-    }  
     nav span{
-        width: 120px;
-        height: 25%;
-    }
-    nav a:nth-child(1):hover~span{
-        top: 0px;
         left: 0px;
-        width: 171px;
-        height: 25%;
+        width: 141px;
+        height: 24%;
+        background: linear-gradient(45deg, #194b4f, #33fffc);
+        border-radius: 10px;
+        transition:0.51s;
     }
-    nav a:nth-child(2):hover~span{
-        top: 40px;
-        left: 0px;
-        width: 171px;
-        height: 25%;
+    nav a:nth-child(1):hover~span{left: 0px; width: 141px; height: 24%;}
+    nav a:nth-child(2):hover~span{left: 0px; top: 23%; width: 141px; height: 24.2%;}
+    nav a:nth-child(3):hover~span{left: 0px; top: 46.8%; height: 23.6%; width: 141px;}
+    nav a:nth-child(4):hover~span{left: 0px; top: 70%; height: 30%; width: 141px;}
+    nav.active {display: flex;} /* Mostrar menú cuando esté activo */
+    nav a {
+        color: white;
+        font-size: 1em;
+        text-transform: none;
+        padding: 0.8em 1.5em;
+        /* border-bottom: 1px solid #ccc; */
     }
-    nav a:nth-child(3):hover~span{
-        top: 80px;
-        left: 0px;
-        width: 171px;
-        height: 25%;
-    }
-    nav a:nth-child(4):hover~span{
-        top: 120px;
-        left: 0px;
-        width: 171px;
-        height: 25%;
-    }
-    #equipos h2 {
-        font-size: 2em; /* Reduce el tamaño del texto */
-    }
-    #equipos h2:after{
-        margin: 1px auto 0;
-    }
+    #equipos {padding: 1em;}
+    #equipos h2 {font-size: 1.2em; margin-bottom: 1em; text-align: center;}
+    #equipos h2:after {margin: 1px auto 0;}
     .equipos-container {
-        gap: 10px;
-    }
-
+        display: grid; /* Usamos grid para alinear las cartas */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajuste para más pequeñas las cartas */
+        gap: 3em;
+        justify-items: center; /* Alinea las cartas en el contenedor */
+        margin: 0px 20px;
+    }  
     .equipo-card {
-        width: 27%; /* Ocupa todo el ancho disponible */
+        width: 100%; /* Se adapta al tamaño del contenedor */
+        max-width: 250px; /* Limita el ancho máximo de cada carta */
+        padding: 1em;
+        /* background-color: #f1f1f1; */
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
     }
-    .equipo-card h3{
-        font-size: 23px;
+    .equipo-card h3 {font-size: 1.2em; margin-bottom: 10px;}
+    .equipo-card:hover {transform: scale(1);}
+    .contenido {display: flex; flex-direction: column; width: 100%; gap: 15px;}
+    #estadisticas1 {padding: 0.8em; transform: scale(0.97); margin-top: 1.5em;}
+    #estadisticas1 h2 {padding: 0px 35px; font-size: 1em; text-align: center;margin-bottom: 0em;}
+    #estadisticas1 h2:after {margin: 1px auto 0;}
+    #estadisticas1 table th, #estadisticas1 table td {padding: 0.5em; font-size: 0.9em; text-align: center;}
+    #estadisticas1 table {
+        font-size: 0.8em; /* Reducimos el tamaño de la fuente en pantallas más pequeñas */
     }
 
-    .contenido {
-        flex-direction: column; /* Cambia a columna */
-        width: 100%; /* Ocupa todo el ancho */
-        gap: 15px;
+    #estadisticas1 table th, #estadisticas1 table td {
+        padding: 0.6em; /* Reducimos el padding en pantallas pequeñas para ajustar la tabla */
     }
-    #estadisticas1{
-        padding: 0px;
-        transform: scale(0.97);
+
+    /* Añadir desplazamiento horizontal para la tabla si no cabe */
+    #estadisticas1 table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Evita que el texto se rompa */
     }
-    #estadisticas1 h2{
-        padding: 0px 35px;
+    .cerrar-btn {
+        font-size: 0.8em;
+        padding: 0.4em 0.8em;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
-    #estadisticas1 h2:after {
-        margin: 1px auto 0;
-    }
+    
+    
     .tabla-clasificacion,
     .goleadores,
     .resultados {
