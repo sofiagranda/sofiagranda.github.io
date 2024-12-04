@@ -1,1 +1,203 @@
-<h1>HOLA MUNDO</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Futsal La Mexico</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Torneo Futsal La Mexico
+        </h1>
+        <nav>
+            <a href="">Equipos</a>
+            <a href="">Partidos</a>
+            <a href="">Clasificación</a>
+            <a href="">Estadísticas</a>
+            <span></span>
+        </nav>
+    </header>
+    <main>
+        <section id="equipos">
+            <h2>
+                <span>Equipos</span>
+                Participantes
+            </h2>
+            <div class="equipos-container" id="lista-equipos">
+                <!-- Aquí se agregarán los equipos dinámicamente -->
+            </div>
+            <div id="estadisticas" class="hidden">
+                <div id="encabezado1">
+                    <h2>
+                        <span>Listado de</span>
+                        Jugadores
+                    </h2>
+                    <button id="cerrar-estadisticas" class="cerrar-btn">X</button>
+                </div>
+                <table id="tabla-estadisticas">
+                    <thead>
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Equipo</th>
+                            <th>Partidos Jugados</th>
+                            <th>Goles</th>
+                            <th>Tarjetas A.</th>
+                            <th>Tarjetas R.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <h2>
+                    <span>Estadisticas del</span>
+                    Equipo
+                </h2>
+                <table id="tabla-estadisticas-equipo">
+                    <thead>
+                        <tr>
+                            <th>Equipo</th>
+                            <th>Partidos Jugados</th>
+                            <th>Goles</th>
+                            <th>Tarjetas Amarillas</th>
+                            <th>Tarjetas Rojas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Se llenará dinámicamente con las estadísticas del equipo -->
+                    </tbody>
+                </table>
+            </div>          
+        </section>            
+        <section id="estadisticas">
+            <h2>
+                <span>Estadisticas del</span>
+                Torneo
+            </h2>
+            <div class="contenido">
+                <!-- Tabla de clasificación -->
+                <div class="tabla-clasificacion">
+                    <h3>POSICIONES</h3>
+                    <table id="tablaPosiciones">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Equipo</th>
+                                <th>Puntos</th>
+                                <th>Gol de Diferencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas dinámicas de posiciones se agregarán aquí -->
+                        </tbody>
+                    </table>
+                    <a id="verTodo" onclick="mostrarTodaLaTabla()" class="btn" style="margin-top: 0px">Ver todo</a>
+                </div>
+                <div id="tablaCompleta" style="display:none;">
+                    <div class="tabla-header">
+                        <h3>Tabla Completa</h3>
+                        <a id="cerrar-tabla">Cerrar Tabla</a>
+                    </div>
+                    <table id="tablaCompletaPosiciones">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Logo</th>
+                                <th>Equipo</th>
+                                <th>Juegos</th>
+                                <th>Ganados</th>
+                                <th>Empatados</th>
+                                <th>Perdidos</th>
+                                <th>Goles a Favor</th>
+                                <th>Goles en Contra</th>
+                                <th>Gol de Diferencia</th>
+                                <th>Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas dinámicas de posiciones completas se agregarán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Goleadores -->
+                <div class="goleadores">
+                    <h3>GOLEADORES</h3>
+                    <table id="tablaGoleadores">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Jugador</th>
+                                <th>Equipo</th>
+                                <th>Goles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas dinámicas de goleadores se agregarán aquí -->
+                        </tbody>
+                    </table>
+                    <a id="ver_todo_goleadores" onclick= "mostrarTop15Goleadores()" class="btn">Ver todo</a>
+                </div>
+                <div id="tablaCompleta-Goleadores" style="display:none;">
+                    <div class="tabla-header-Goleadores">
+                        <h3>Top 10 goleadores</h3>
+                        <a id="cerrar-tabla-goleadores">Cerrar Tabla</a>
+                    </div>
+                    <table id="tabla-Completa-Goleadores">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Jugador</th>
+                                <th>Equipo</th>
+                                <th>Logo</th>
+                                <th>Goles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas dinámicas de posiciones completas se agregarán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+    
+                <!-- Resultados -->
+                <div class="resultados">
+                    <h3>RESULTADOS</h3>
+                    <div class="resultado">
+                        <img src="images/emilea.png">
+                        <span>21 - 2</span>
+                        <img src="images/publiron.png">
+                    </div>
+                    <div class="resultado">
+                        <img src="images/familiar.png">
+                        <span>21 - 2</span>
+                        <img src="images/gj_sporting.png">
+                    </div>
+                    <div class="resultado">
+                        <img src="images/moritex.png">
+                        <span>21 - 2</span>
+                        <img src="images/san_pedro.png">
+                    </div>
+                    <div class="resultado">
+                        <img src="images/the_walls.png">
+                        <span>21 - 2</span>
+                        <img src="images/monkeys.png">
+                    </div>
+                    <div class="resultado">
+                        <img src="images/corinthzonas.png">
+                        <span>21 - 2</span>
+                        <img src="images/semen_up.png">
+                    </div>
+                    <a href="#" class="btn">Ver todo</a>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <p>&copy; 2024 Torneo Futsal La Mexico</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>
+
