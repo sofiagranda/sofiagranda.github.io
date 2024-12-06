@@ -1,5 +1,5 @@
 /* General Styles */
-header {
+/* header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@ header h1 {
     color: white;
     font-size: 2.5em;
     text-transform: uppercase;
-}
+} 
 nav {
     position: relative;
     width: 600px;
@@ -58,13 +58,113 @@ nav a:nth-child(4):hover~span{
     width: 168px;
 }
 .menu-toggle {
-    display: none; /* Oculto en escritorio */
+    display: none;
     background: none;
     border: none;
     color: white;
     font-size: 1.5em;
     cursor: pointer;
+} 
+*/
+/* Reset de margenes */
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo oscuro */
 }
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0a23; /* Fondo oscuro similar a estrellas */
+    height: 117px;
+    border-bottom: 2px solid orange;
+}
+
+
+/* Contenedor de texto */
+.text-container {
+    text-align: center;
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Título principal */
+.text-container h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 18px 0px 12px 0px;
+    color: white;
+}
+
+/* Título secundario con borde amarillo */
+.text-container h2 {
+    font-size: 2.5rem;
+    color: #0a0a23; /* Color de fondo */
+    text-transform: uppercase;
+    margin: -25px 0;
+    padding: 0px 20px;
+    text-shadow: 2px 2px 0 orange;
+    display: inline-block;
+    position: relative;
+}
+
+/* Línea debajo del título */
+.text-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -309px;
+    width: 269%;
+    height: 3px;
+    background-color: orange;
+}
+
+/* Subtítulo */
+.text-container p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Hacer el header responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hexagon-container {
+        flex-direction: row;
+        gap: 5px;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .hexagon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-container h2 {
+        font-size: 2rem;
+    }
+    .text-container h2::after {
+        left: 0px;
+        width: 100%;
+    }
+}
+
 h2, h3 {
     text-align: center;
 }
@@ -519,6 +619,7 @@ section {
     z-index: 2; /* Asegura que el contenido esté sobre la capa */
 }
 #equipos h2{
+    margin: 0px 0px 10px 0px;
     font-size: 3em;
     color: #fffdd0;
     letter-spacing: 1px;
