@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Datos de ejemplo de jugadores y estadísticas
 const jugadoresPorEquipo = {
     "Club Emilea": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 5, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -28,7 +28,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Publiron": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 4, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -46,7 +46,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Familiar SC": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 3, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -64,7 +64,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "G.J.Sporting": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 2, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -82,7 +82,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Moritex": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -100,7 +100,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "San Pedro": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -118,11 +118,11 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "The Walls": [
-        { jugador: "Nicolas Paredes", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
-        { jugador: "David Paredes", partidos_jugados: 0, goles: 9, amarillas: 0, rojas: 0 },
-        { jugador: "Ricardo Paredes", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
+        { jugador: "Nicolas Paredes", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "David Paredes", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Ricardo Paredes", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Alexis Briones", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Cristopher Olmedo", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
+        { jugador: "Cristopher Olmedo", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Cristhian Oviedo", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Diego Antamba", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Diego Yanza", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -130,13 +130,13 @@ const jugadoresPorEquipo = {
         { jugador: "Lenin Mateo", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Mateo Apellido", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Paul Vaca", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Antony Cazagiglia", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
+        { jugador: "Antony Cazagiglia", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Alan Salazar", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
-        { jugador: "Alejandro Guachamin", partidos_jugados: 0, goles: 10, amarillas: 0, rojas: 0 },
+        { jugador: "Alejandro Guachamin", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Lucas Quiroz", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Monkeys": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -154,7 +154,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Corinthzonas": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -172,7 +172,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Semen Up": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -190,7 +190,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Banda del Sur": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
@@ -208,7 +208,7 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
     "Rieles FC": [
-        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
