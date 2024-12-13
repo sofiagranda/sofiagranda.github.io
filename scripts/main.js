@@ -189,6 +189,42 @@ const jugadoresPorEquipo = {
         { jugador: "Jugador 15", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
         { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
     ],
+    "Banda del Sur": [
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 5", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 6", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 7", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 8", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 9", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 10", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 11", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 12", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 13", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 14", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 15", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
+    ],
+    "Rieles FC": [
+        { jugador: "Jugador 1", partidos_jugados: 0, goles: 1, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 2", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 3", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 4", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 5", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 6", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 7", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 8", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 9", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 10", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 11", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 12", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 13", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 14", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 15", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 },
+        { jugador: "Jugador 16", partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
+    ],
     // Añadir más equipos y jugadores según sea necesario
 };
 
@@ -198,9 +234,11 @@ const equipos = [
     { nombre: "Corinthzonas", imagen: "images/corinthzonas.png" },
     { nombre: "Familiar SC", imagen: "images/familiar.png" },
     { nombre: "G.J.Sporting", imagen: "images/gj_sporting.png" },
+    { nombre: "Banda del Sur", imagen: "images/banda_ds.png" },
     { nombre: "Publiron", imagen: "images/publiron.png" },
     { nombre: "Monkeys", imagen: "images/monkeys.png" },
     { nombre: "Moritex", imagen: "images/moritex.png" },
+    { nombre: "Rieles FC", imagen: "images/rieles.png" },
     { nombre: "San Pedro", imagen: "images/san_pedro.png" },
     { nombre: "Semen Up", imagen: "images/semen_up.png" },
     { nombre: "The Walls", imagen: "images/the_walls.png" },
@@ -283,7 +321,13 @@ const equipo = {
     ],
     "Semen Up": [
         { partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
-    ]
+    ],
+    "Banda del Sur": [
+        { partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
+    ],
+    "Rieles FC": [
+        { partidos_jugados: 0, goles: 0, amarillas: 0, rojas: 0 }
+    ],
     // Agregar más equipos según sea necesario
 };
 // Mostrar estadísticas de equipo
@@ -368,9 +412,11 @@ let posiciones = [
     { equipo: "Corinthzonas", logo: "images/corinthzonas.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "Familiar SC", logo: "images/familiar.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "G.J.Sporting", logo: "images/gj_sporting.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
+    { equipo: "Banda del Sur", logo: "images/banda_ds.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "Publiron", logo: "images/publiron.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "Moritex", logo: "images/moritex.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "Monkeys", logo: "images/monkeys.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
+    { equipo: "Rieles FC", logo: "images/rieles.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "San Pedro", logo: "images/san_pedro.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "Semen Up", logo: "images/semen_up.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
     { equipo: "The Walls", logo: "images/the_walls.png", juegos: 0, ganados: 0, empatados: 0, perdidos: 0, golesAFavor: 0, golesEnContra: 0, puntos: 0 },
