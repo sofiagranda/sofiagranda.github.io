@@ -521,7 +521,7 @@ td img {
         font-weight: bold;
     }
     #tablaPosiciones th, #tablaPosiciones td{
-        padding: 10.6px 11px !important;
+        padding: 10.6px 4px !important;
         font-size: 10px;
         font-weight: bold;
     }
