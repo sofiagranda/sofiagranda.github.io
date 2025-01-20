@@ -16,9 +16,9 @@ footer {
     background: #333;
     color: #fff;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-  }
+  } */
 h2, h3 {
     text-align: center;
 }
@@ -499,11 +499,14 @@ td img {
     justify-content: space-evenly;
     padding: 8.6px 10px;
     border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .resultado img {
     width: 58.5px;
     height: 58.5px;
+    padding: 0px 4px;
 }
 
 .resultado:last-child {
@@ -516,7 +519,7 @@ td img {
         width: 100%;
     }
     #tablaGoleadores th, #tablaGoleadores td{
-        padding: 15.1px 11px !important;
+        padding: 15.1px 4px !important;
         font-size: 11px;
         font-weight: bold;
     }
