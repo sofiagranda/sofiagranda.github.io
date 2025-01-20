@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fffdd0;
+    background: url(/images/fondo.jpg);
+    width: auto;
 }
 section {
     padding: 20px;
-    margin: 3px 0;  
     background: #fff;
     border: 1px solid #ccc;
 }
@@ -15,8 +15,10 @@ footer {
     padding: 10px;
     background: #333;
     color: #fff;
-    margin-top: 6px;
 }
+/* ::-webkit-scrollbar {
+    display: none;
+  } */
 h2, h3 {
     text-align: center;
 }
@@ -26,7 +28,6 @@ h2, h3 {
     align-items: center;
     background: #0a0a23; /* Fondo oscuro similar a estrellas */
     height: 117px;
-    border-bottom: 2px solid orange;
 }
 .text-container {
     text-align: center;
@@ -59,7 +60,7 @@ h2, h3 {
     background-color: orange;
 }
 .text-container p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #ccc;
     margin-top: 10px;
 }
@@ -92,13 +93,13 @@ h2, h3 {
 }
 .equipo-card:hover {
     transform: scale(1.1);
-    background: linear-gradient(10deg, #194b4f, #33fffc);
+    background: linear-gradient(10deg, #373500, #FFCF00);
     border: 3px solid #333;
     transition: 0.2s;
 }
 #equipos {
     position: relative;
-    background-image: url('../images/cancha.jpg') ; /* Cambia por la ruta de tu imagen */
+    background-image: url('../images/cancha.png') ; /* Cambia por la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para cubrir toda el área */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
@@ -122,7 +123,7 @@ h2, h3 {
 #equipos h2{
     margin: 0px 0px 10px 0px;
     font-size: 3em;
-    color: #fffdd0;
+    color: #0a0a23;
     letter-spacing: 1px;
     position: relative;
     font-weight: 600;
@@ -130,10 +131,10 @@ h2, h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #equipos h2 span:hover{
-    color: #000
+    color: #ffd700
 }
 #equipos h2 span{
-    color: #fffdd0;
+    color: #0a0a23;
     font-weight: 200;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -149,6 +150,7 @@ h2, h3 {
 }
 .hidden {
     display: none;
+    padding: 0px 25px 25px;
 }
 table {
     width: 100%;
@@ -184,20 +186,20 @@ td img {
     padding: 0.8em; /* Aumenta el espacio para mejor legibilidad */
     font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
     text-align: center;
-    border: 1px solid #ccc; /* Añade borde a las celdas */
+    border: 1px solid #ffd700; /* Añade borde a las celdas */
 }
 #estadisticas1 table th {
     background-color: #333; /* Fondo oscuro para los encabezados */
     color: white;
 }
 #estadisticas1 table td {
-    color: #000; /* Fondo más claro para las celdas de datos */
+    color: white; /* Fondo más claro para las celdas de datos */
     font-weight: bold;
 }
 #estadisticas1 h2{
     font-size: 3em;
     margin-bottom: 20px;
-    color: #000;
+    color: #ffd700;
     letter-spacing: 1px;
     position: relative;
     font-weight: 600;
@@ -205,15 +207,15 @@ td img {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #estadisticas1 h2 span{
-    color: #292929;
+    color: #ffd700;
     font-weight: 200;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #estadisticas1 h2 span:hover{
-    color: crimson;
+    color: white;
 }
 #estadisticas1 h2:after {
-    border-top: 2px solid #000;
+    border-top: 2px solid #ffd700;
     display: block;
     width: 100px;
     content: "";
@@ -228,7 +230,7 @@ td img {
     margin-bottom: 5px;
 }
 #encabezado1 h2{
-    padding-left: 340px;
+    padding-left: 380px;
 }
 #encabezado1 button {
     text-decoration: none;
@@ -414,6 +416,11 @@ td img {
     background-color: #0033a0;
     cursor: pointer;
 }
+#tablaGoleadores table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap; /* Evita que el texto se rompa */
+}
 #tablaGoleadores th, #tablaGoleadores td {
     padding: 2.8%;
     border: 1px solid #ddd;
@@ -502,7 +509,31 @@ td img {
 .resultado:last-child {
     border-bottom: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
+    #encabezado1 h2{padding-left: 232px !important; padding-right: 0px !important;}
+    .text-container h2::after {
+        left: 0px;
+        width: 100%;
+    }
+    #tablaGoleadores th, #tablaGoleadores td{
+        padding: 15.1px 11px !important;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    #tablaPosiciones th, #tablaPosiciones td{
+        padding: 10.6px 11px !important;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #tablaCompleta th, #tablaCompleta td {
+        font-size: 0.8em; /* Reduce tamaño de fuente */
+        padding: 0.2em; /* Reduce el padding */
+    }
+    .tabla-header h3{
+        padding-left: 362px;
+    }
+}
+@media (max-width: 770px) {
     .header {
         flex-direction: column;
         height: auto;
@@ -518,13 +549,9 @@ td img {
         transform: none;
     }
 
-    .hexagon {
-        width: 45px;
-        height: 45px;
-    }
-
     .text-container h1 {
         font-size: 1.5rem;
+        padding-bottom: 10px;
     }
 
     .text-container h2 {
@@ -600,13 +627,11 @@ td img {
     .equipo-card h3 {font-size: 1.2em; margin-bottom: 10px;}
     .equipo-card:hover {transform: scale(1);}
     .contenido {display: flex; flex-direction: column; width: 100%; gap: 15px;}
-    #estadisticas1 {padding: 0.8em; transform: scale(0.97); margin-top: 1.5em;}
+    #encabezado1 h2{padding-left: 263px !important; padding-right: 0px !important;}
+    #estadisticas1 {padding: 10px 10px 0px 10px; transform: scale(0.97); margin-top: 1.5em;}
     #estadisticas1 h2 {padding: 0px 35px; font-size: 1em; text-align: center;margin-bottom: 0em;}
     #estadisticas1 h2:after {margin: 1px auto 0;}
     #estadisticas1 table th, #estadisticas1 table td {padding: 0.5em; font-size: 0.9em; text-align: center;}
-    #estadisticas1 table {
-        font-size: 0.8em; /* Reducimos el tamaño de la fuente en pantallas más pequeñas */
-    }
 
     #estadisticas1 table th, #estadisticas1 table td {
         padding: 0.6em; /* Reducimos el padding en pantallas pequeñas para ajustar la tabla */
@@ -644,6 +669,11 @@ td img {
     /* Para botones o elementos dentro del header */
     .tabla-header button {
         margin-top: 0.5em; /* Espaciado adicional en pantallas pequeñas */
+    }
+    #tablaPosiciones th, #tablaPosiciones td{
+        padding: 18px 8px !important;
+        font-size: 19px;
+        font-weight: bold;
     }
     #tablaCompleta th, #tablaCompleta td {
         font-size: 0.8em; /* Reduce tamaño de fuente */
@@ -689,7 +719,30 @@ td img {
         padding: 20px;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 430px) {
+    #encabezado1 h2{padding-left: 80px !important; padding-right: 0px !important;}
+    .text-container h2::after {
+        left: 0px;
+        width: 100%;
+    }
+    #tablaPosiciones th, #tablaPosiciones td{
+        padding: 10.6px 8px !important;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 380px) {
+    #encabezado1 h2{padding-left: 60px !important; padding-right: 0px !important;}
+    .text-container h2::after {
+        left: 0px;
+        width: 100%;
+    }
+}
+@media (max-width: 330px) {
+    .text-container h2::after {
+        left: 0px;
+        width: 100%;
+    }
     nav{
         left: 157px;
         width: 45%;
@@ -697,6 +750,17 @@ td img {
     #tablaCompleta-Goleadores thead th:nth-child(4) {
         display: none;
     }
+    #tablaGoleadores th, #tablaGoleadores td{
+        padding: 15.1px 11px !important;
+        font-size: 9px;
+        font-weight: bold;
+    }
+    #tablaPosiciones th, #tablaPosiciones td{
+        padding: 10.6px 11px !important;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #encabezado1 h2{padding-left: 20px !important; padding-right: 0px !important;}
     #tablaCompleta-Goleadores tbody td:nth-child(4) {
         display: none;
     }
