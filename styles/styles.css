@@ -16,9 +16,9 @@ footer {
     background: #333;
     color: #fff;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-  } */
+  }
 h2, h3 {
     text-align: center;
 }
