@@ -186,7 +186,7 @@ td img {
     padding: 0.8em; /* Aumenta el espacio para mejor legibilidad */
     font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
     text-align: center;
-    border: 1px solid #0d01ff; /* Añade borde a las celdas */
+    border: 1px solid #ffd700; /* Añade borde a las celdas */
 }
 #estadisticas1 table th {
     background-color: #333; /* Fondo oscuro para los encabezados */
