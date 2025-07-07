@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url(/images/fondo.jpg);
+    /* background: url(/images/fondo.jpg); */
     width: auto;
 }
 section {
@@ -186,20 +186,20 @@ td img {
     padding: 0.8em; /* Aumenta el espacio para mejor legibilidad */
     font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
     text-align: center;
-    border: 1px solid #ffd700; /* Añade borde a las celdas */
+    border: 1px solid #00315A; /* Añade borde a las celdas */
 }
 #estadisticas1 table th {
-    background-color: #333; /* Fondo oscuro para los encabezados */
+    background-color: #00315A; /* Fondo oscuro para los encabezados */
     color: white;
 }
 #estadisticas1 table td {
-    color: white; /* Fondo más claro para las celdas de datos */
+    color: #00315A; /* Fondo más claro para las celdas de datos */
     font-weight: bold;
 }
 #estadisticas1 h2{
     font-size: 3em;
     margin-bottom: 20px;
-    color: #ffd700;
+    color: #00315A;
     letter-spacing: 1px;
     position: relative;
     font-weight: 600;
@@ -207,7 +207,7 @@ td img {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #estadisticas1 h2 span{
-    color: #ffd700;
+    color: #00315A;
     font-weight: 200;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -215,7 +215,7 @@ td img {
     color: white;
 }
 #estadisticas1 h2:after {
-    border-top: 2px solid #ffd700;
+    border-top: 2px solid #00315A;
     display: block;
     width: 100px;
     content: "";
